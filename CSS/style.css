@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: white;
+    margin: 20px 10px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width:768px){
+    section{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 200px;
+    }
+}
+.Box{
+    width: 300px;
+    height: 500px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    /* gap: 40%; */
+}
+@media (min-width:768px){
+    .Box{
+        padding: 30px 50px;
+    }
+}
+.Box div>h1{
+    color: var(--Very-light-gray);
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+.Box .txt{
+    color: var(--Transparent-white);
+    font-size: 15px;
+    text-align: justify;
+    line-height: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.btn{
+    /* width: 200px; */
+}
+.btn>button{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    /* background-color: var(--Very-light-gray); */
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.btn>button:hover{
+    cursor: pointer;
+}
+.Sedans{
+    background-color: var(--Bright-orange);
+}
+.Sedans .btn>button{
+    color: var(--Bright-orange);
+    /* background-color: var(--Bright-orange); */
+}
+.Sedans .btn>button:hover{
+    background-color: var(--Bright-orange);
+    color: var(--Very-light-gray);
+    border: 2px solid  var(--Very-light-gray);
+}
+.Suvs{
+    background-color: var(--Dark-cyan);
+}
+.Suvs .btn>button{
+    color: var(--Dark-cyan);
+}
+.Suvs .btn>button:hover{
+    background-color: var(--Dark-cyan);
+    color: var(--Very-light-gray);
+    border: 2px solid  var(--Very-light-gray);
+
+}
+.Luxury{
+    background-color: var(--Very-dark-cyan);
+}
+.Luxury .btn>button{
+    color: var(--Very-dark-cyan);
+}
+.Luxury .btn>button:hover{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-light-gray);
+    border: 2px solid  var(--Very-light-gray);
+}
